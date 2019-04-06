@@ -1,3 +1,5 @@
+"""Using Python 3.6."""
+
 from haversine import haversine
 
 
@@ -13,7 +15,7 @@ class Cargo:
         destination_state: str,
         destination_lat: float,
         destination_long: float,
-    ):
+    ) -> None:
         self.product = product
         self.origin_city = origin_city
         self.origin_state = origin_state
@@ -24,7 +26,8 @@ class Cargo:
         self.destination_lat = destination_lat
         self.destination_long = destination_long
 
-    def total_distance_delivery(self):
+    def total_distance_delivery(self) -> float:
+        """Return the distance in KM betwen the cargo and destination."""
         return haversine(
             self.origin_lat,
             self.origin_long,

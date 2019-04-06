@@ -1,5 +1,6 @@
 """Using Python 3.6."""
-from math import radians, cos, sin, sqrt, atan2
+
+from math import atan2, cos, radians, sin, sqrt
 
 
 def haversine(
@@ -14,6 +15,7 @@ def haversine(
     """
     EARTH_RADIUS_KM = 6371
 
+    # Convert all the coordinates to radians
     initial_lat, initial_long, destination_lat, destination_long = map(
         radians, [initial_lat, initial_long, destination_lat, destination_long]
     )
