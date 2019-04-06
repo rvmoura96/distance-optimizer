@@ -25,5 +25,5 @@ def haversine(
         + cos(initial_lat) * cos(destination_lat) * sin(delta_long / 2) ** 2
     )
     c = 2 * atan2(sqrt(a), sqrt(1 - a))
-    distance = EARTH_RADIUS_KM * c
-    return round(distance, ndigits=2)
+    distance = round(EARTH_RADIUS_KM * c, ndigits=2)
+    return distance
