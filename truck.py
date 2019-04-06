@@ -15,9 +15,11 @@ class Truck:
         self.long = lng
 
     def shipment(self, cargo: Cargo) -> str:
+        """Return what truck should deliver."""
         return cargo.product
 
     def distance_to_cargo(self, cargo: Cargo) -> float:
+        """Return the distance between the truck and his shipment."""
         distance_to_cargo = haversine(
             self.lat, self.long, cargo.origin_lat, cargo.origin_long
         )

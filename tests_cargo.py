@@ -1,3 +1,5 @@
+"""Using Python 3.6."""
+
 from unittest import TestCase, main
 from cargo import Cargo
 
