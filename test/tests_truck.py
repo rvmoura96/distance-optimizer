@@ -1,6 +1,13 @@
 """Using Python 3.6."""
 
+import os
+import sys
+from os import path
 from unittest import TestCase, main
+
+project_dir = path.dirname(__file__)
+project_dir = path.join("..")
+sys.path.append(project_dir)
 
 from cargo import Cargo
 from truck import Truck

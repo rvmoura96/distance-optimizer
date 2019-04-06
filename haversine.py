@@ -29,3 +29,7 @@ def haversine(
     c = 2 * atan2(sqrt(a), sqrt(1 - a))
     distance = round(EARTH_RADIUS_KM * c, ndigits=2)
     return distance
+
+
+if __name__ == "__main__":
+    pass

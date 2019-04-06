@@ -34,3 +34,7 @@ class Cargo:
             self.destination_lat,
             self.destination_long,
         )
+
+
+if __name__ == "__main__":
+    pass

@@ -24,3 +24,7 @@ class Truck:
             self.lat, self.long, cargo.origin_lat, cargo.origin_long
         )
         return distance_to_cargo
+
+
+if __name__ == "__main__":
+    pass
